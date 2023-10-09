@@ -19,24 +19,24 @@ audience: Application User
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-To maintain the accuracy of report data, business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, business performance analytics logs information in the `BPA_SelfHelp_Logs` table in Microsoft Dataverse. This table provides insights into issues and helps you take appropriate action.
+To maintain the accuracy of report data, business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, business performance analytics logs information in the `Transform Log` table in Microsoft Dataverse. This table provides insights into issues and helps you take appropriate action.
 
-### Access the BPA_SelfHelp_Logs table
+### Access the Transform Log table
 
-To access the `BPA_SelfHelp_Logs` table, follow these steps.
+To access the `Transform Log` table, follow these steps.
 
 1. Open the [Power Apps maker portal](https://make.preview.powerapps.com/).
 2. Go to **Tables** \> **All**.
-3. Search for **BPA\_SelfHelp\_Logs**.
+3. Search for **Transform\ Log**.
 
-### Understanding the BPA_SelfHelp_Logs table
+### Understanding the Transform Log table
 
 | Sno | Column name | Description |
 |---|---|---|
-| 1 | LogCode | The unique code of each error or warning. |
-| 2 | LogName | The description of each error or warning. |
-| 3 | LogType | <p>This field can have two values:</p><ul><li>**Error** – Users must take action to fix issue the issue.</li><li>**Warning** – The information is for awareness only. No action is required.</li></ul> |
-| 4 | LogDetails | Details about records that have errors or warnings. You can use this information to take appropriate action. |
+| 1 | Log Code | The unique code of each error or warning. |
+| 2 | Log Name | The description of each error or warning. |
+| 3 | Log Type | <p>This field can have two values:</p><ul><li>**Error** – Users must take action to fix issue the issue.</li><li>**Warning** – The information is for awareness only. No action is required.</li></ul> |
+| 4 | Log Details | Details about records that have errors or warnings. You can use this information to take appropriate action. |
 | 5 | Microsoftdocsurl | Use this URL to go to public documentation that can help you troubleshoot the issue. |
 | 6 | Createddate | The date when the record was logged in the table. |
 
